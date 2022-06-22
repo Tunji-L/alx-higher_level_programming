@@ -8,7 +8,7 @@ class Square:
     """This is a class with private instance
     attribute size to define a square.
     """
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         """Args:
             size(int): size of the square
             as a private instance attribute
@@ -17,7 +17,7 @@ class Square:
 
     @property
     def size(self):
-        return self.__size
+        return (self.__size)
 
     @size.setter
     def size(self, size):
