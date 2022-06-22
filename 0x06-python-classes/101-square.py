@@ -20,16 +20,17 @@ class Square:
         output = ""
         if self.size == 0:
             return output
-
-        for i in range(self.position[1]):
-            output += "\n"
-        for i in range(0, self.size):
-            for k in range(self.position[0]):
-                output += " "
-            for j in range(self.size):
-                output += "#"
-            if i is not (self.size - 1):
+        else:
+            for i in range(self.position[1]):
                 output += "\n"
+            for i in range(0, self.size):
+                for k in range(self.position[0]):
+                    output += " "
+                for j in range(self.size):
+                    output += "#"
+                if i is not (self.size - 1):
+                    output += "\n"
+            return output
 
     @property
     def size(self):
