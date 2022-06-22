@@ -8,7 +8,7 @@ class Square:
     """This is a class with private instance
     attribute size to define a square.
     """
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """Args:
             size(int): size of the square
             as a private instance attribute
@@ -51,6 +51,8 @@ class Square:
         if self.__size == 0:
             print()
         else:
+            for i in range(self.__position[1]):
+                print()
             for i in range(self.__size):
                 for j in range(self.__position[0]):
                     print(" ", end='')
