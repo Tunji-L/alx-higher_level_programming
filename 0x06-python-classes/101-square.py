@@ -18,17 +18,17 @@ class Square:
 
     def __str__(self):
         output = ""
-        if self.__size == 0:
+        if self.size == 0:
             return output
 
-        for i in range(self.__position[1]):
+        for i in range(self.position[1]):
             output += "\n"
-        for i in range(0, self.__size):
-            for k in range(self.__position[0]):
+        for i in range(0, self.size):
+            for k in range(self.position[0]):
                 output += " "
             for j in range(self.size):
                 output += "#"
-            if i is not (self.__size - 1):
+            if i is not (self.size - 1):
                 output += "\n"
 
     @property
