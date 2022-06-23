@@ -1,9 +1,10 @@
 #!/usr/bin/python3
+"""Writing a class "MagicClass" to match a given bytecode
+"""
 import math
 
 
 class MagicClass:
-
     """Class that stores the properties
     of a circumference"""
     def __init__(self, radius=0):
