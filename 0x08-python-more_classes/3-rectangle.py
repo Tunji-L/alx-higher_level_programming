@@ -46,9 +46,9 @@ class Rectangle:
             return output
         else:
             for i in range(self.__height):
-                for j in range(self.__width):
-                    output += "#"
-                output += "\n"
+                output += ("#" * self.__width)
+                if (i < (self.__height - 1)):
+                    output += "\n"
             return output
 
     def area(self):
