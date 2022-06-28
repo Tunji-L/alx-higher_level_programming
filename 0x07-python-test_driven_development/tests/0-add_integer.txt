@@ -1,0 +1,44 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+Importing ``add_integer`` from the ``0-add_integer`` module:
+	>>> add_integer = __import__("0-add_integer").add_integer
+
+Adding 6 and 3:
+	>>> add_integer(6, 3)
+	9
+
+Adding 5 and -2:
+	>>> add_integer(5, -2)
+	3
+
+Adding -10 and -5:
+	>>> add_integer(-10, -5)
+	-15
+
+Testing list and integer:
+	>>> add_integer([1,2,3], 5)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+Testing integer and tuple:
+        >>> add_integer(8, (2, 3))
+        Traceback (most recent call last):
+                ...
+        TypeError: b must be an integer
+
+Testing string and string:
+        >>> add_integer('1', '5')
+        Traceback (most recent call last):
+                ...
+        TypeError: a must be an integer
+	
+Testing tuple:
+        >>> add_integer((2,))
+        Traceback (most recent call last):
+                ...
+        TypeError: a must be an integer
