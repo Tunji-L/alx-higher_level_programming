@@ -1,0 +1,40 @@
+The ``1-my_list`` module
+======================
+
+Using ``MyList``
+-------------------
+
+Importing ``MyList`` from the ``1-my_list`` module:
+	>>> MyList = __import__("1-my_list").MyList
+
+case instantiation:
+	>>> my_list = MyList()
+
+case subclass:
+	>>> issubclass(MyList, list)
+	True
+
+case __str__:
+	>>> print(MyList())
+	[]
+
+case append:
+	>>> my_list = MyList()
+	>>> my_list.append(1)
+	>>> my_list.append(3)
+	>>> my_list.append(2)
+	>>> print(my_list)
+	[1, 3, 2]
+
+case print sorted append:
+        >>> my_list = MyList()
+        >>> my_list.append(1)
+        >>> my_list.append(3)
+        >>> my_list.append(2)
+	>>> my_list.print_sorted()
+        [1, 2, 3]
+
+case print not sorted append:
+	>>> my_list = MyList()
+	>>> my_list.print_sorted()
+	[]
