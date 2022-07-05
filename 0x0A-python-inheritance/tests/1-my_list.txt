@@ -26,7 +26,7 @@ case append:
 	>>> print(my_list)
 	[1, 3, 2]
 
-case print sorted append:
+case print not sorted append:
         >>> my_list = MyList()
         >>> my_list.append(1)
         >>> my_list.append(3)
@@ -38,3 +38,11 @@ case print empty sorted:
 	>>> my_list = MyList()
 	>>> my_list.print_sorted()
 	[]
+
+case print sorted append:
+        >>> my_list = MyList()
+        >>> my_list.append(1)
+        >>> my_list.append(2)
+        >>> my_list.append(3)
+        >>> my_list.print_sorted()
+        [1, 2, 3]
