@@ -34,7 +34,7 @@ case print sorted append:
 	>>> my_list.print_sorted()
         [1, 2, 3]
 
-case print not sorted append:
+case print empty sorted:
 	>>> my_list = MyList()
 	>>> my_list.print_sorted()
 	[]
