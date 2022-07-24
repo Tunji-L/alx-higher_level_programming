@@ -9,6 +9,5 @@ def read_file(filename):
     and prints it to stdout
     """
     with open(filename) as f:
-        lines = f.readline()
+        lines = f.read()
         print(lines)
-        
