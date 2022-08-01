@@ -15,7 +15,7 @@ class Rectangle(BaseGeometry):
         self.__height = BaseGeometry.integer_validator(self, "height", height)
 
     def __repr__(self):
-        print(f"{self.__class__.__name__} {self.__width}/{self.__height}")
+        return (f"{self.__class__.__name__} {self.__width}/{self.__height}")
 
     def __str__(self):
         return (f"{self.__class__.__name__} {self.__width}/{self.__height}")
