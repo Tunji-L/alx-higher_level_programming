@@ -14,12 +14,12 @@ case integer_validator("name", integer > 0):
 	>>> bg = BaseGeometry()
 	>>> bg.integer_validator("myint", 3)
 
-case integer_validator("name", string):
+case integer_validator("age", string):
 	>>> bg = BaseGeometry()
-	>>> bg.integer_validator("name", "tunji")
+	>>> bg.integer_validator("age", "tunji")
 	Traceback (most recent call last):
 		...
-	TypeError: name must be an integer
+	TypeError: age must be an integer
 
 case integer_validator("name", 0):
 	>>> bg = BaseGeometry()
@@ -48,3 +48,38 @@ case area():
 	Traceback (most recent call last):
 		...
 	Exception: area() is not implemented
+
+case integer_validator("age", None):
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("name", None)
+        Traceback (most recent call last):
+                ...
+        TypeError: age must be an integer
+
+case integer_validator("age", dictionary):
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("age", {1, 2})
+        Traceback (most recent call last):
+                ...
+        TypeError: age must be an integer
+
+case integer_validator("age", bool):
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("age", True)
+        Traceback (most recent call last):
+                ...
+        TypeError: age must be an integer
+
+case integer_validator("age", list):
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("age", [4, 5])
+        Traceback (most recent call last):
+                ...
+        TypeError: age must be an integer
+
+case integer_validator("age", tuple):
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("age", (4,))
+        Traceback (most recent call last):
+                ...
+        TypeError: age must be an integer
