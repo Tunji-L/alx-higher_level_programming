@@ -1,0 +1,50 @@
+The ``7-base_geometry`` module
+======================
+
+Using ``BaseGeometry``
+-------------------
+
+Importing ``BaseGeometry`` from the ``7-base_geometry`` module:
+	>>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+case instantiation:
+	>>> bg = BaseGeometry()
+
+case integer_validator("name", integer > 0):
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("myint", 3)
+
+case integer_validator("name", string):
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("name", "tunji")
+	Traceback (most recent call last):
+		...
+	TypeError: name must be an integer
+
+case integer_validator("name", 0):
+	>>> bg = BaseGeometry()
+        >>> bg.integer_validator("age", 0)
+	Traceback (most recent call last):
+                ...
+        ValueError: age must be greater than 0
+
+case integer_validator("name", negative):
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("age", -1)
+        Traceback (most recent call last):
+                ...
+        ValueError: age must be greater than 0
+
+case integer_validator("name", float):
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("age", 4.5)
+        Traceback (most recent call last):
+                ...
+        TypeError: age must be an integer
+
+case area():
+	>>> bg = BaseGeometry()
+	>>> bg.area()
+	Traceback (most recent call last):
+		...
+	Exception: area() is not implemented
