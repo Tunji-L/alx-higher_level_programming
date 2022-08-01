@@ -13,6 +13,7 @@ case instantiation:
 case integer_validator("name", integer > 0):
 	>>> bg = BaseGeometry()
 	>>> bg.integer_validator("myint", 3)
+	3
 
 case integer_validator("age", string):
 	>>> bg = BaseGeometry()
@@ -51,7 +52,7 @@ case area():
 
 case integer_validator("age", None):
         >>> bg = BaseGeometry()
-        >>> bg.integer_validator("name", None)
+        >>> bg.integer_validator("age", None)
         Traceback (most recent call last):
                 ...
         TypeError: age must be an integer
