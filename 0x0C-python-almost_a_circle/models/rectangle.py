@@ -4,6 +4,7 @@ rite the class Rectangle that inherits from Base
 """
 from models.base import Base
 
+
 class Rectangle(Base):
     """
     A class Rectangle that inherit from Base
@@ -46,5 +47,3 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         self.__y = value
-
-
