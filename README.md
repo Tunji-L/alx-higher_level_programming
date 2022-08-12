@@ -19,3 +19,4 @@ The table below contains short details about each folder
 | [`0x0B-python-input_output`](./0x0B-python-input_output) | Open, read, write and append files from a _Python_ script|
 | [`0x0C-python-almost_a_circle`](./0x0C-python-almost_a_circle) | Unit testing, serialization, deserialization, JSON, `args` and `kwargs` in _Python_ |
 | [`0x0D-SQL_introduction`](./0x0D-SQL_introduction) | Databases, relational databases, subqueries, tables, _MySQL_ statements and functions |
+| [`0x0E-SQL_more_queries`](./0x0E-SQL_more_queries) | create a new user, manage privileges for a user, `PRIMARY KEY`, `FOREIGN KEY`, constraints, subqueries, `JOIN` and `UNION` with _MySQL_ |
